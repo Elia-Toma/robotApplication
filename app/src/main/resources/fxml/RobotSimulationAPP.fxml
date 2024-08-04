@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane prefHeight="750.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="it.unicam.cs.mp.robotapplication.app.RobotSimulationAppController">
+    <children>
+        <AnchorPane fx:id="fieldArea" layoutX="50.0" layoutY="118.0" prefHeight="600.0" prefWidth="800.0"
+                    style="-fx-background-color: LIGHTGREY; -fx-border-color: black; -fx-border-width: 3;"/>
+        <Group fx:id="group"/>
+        <Button fx:id="btnNExecution" layoutX="279.0" layoutY="26.0" mnemonicParsing="false" prefHeight="70.0"
+                prefWidth="182.0" text="Execute 10 steps" onAction="#executeMultipleCommands">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnOneExecution" layoutX="50.0" layoutY="26.0" mnemonicParsing="false" prefHeight="70.0"
+                prefWidth="182.0" text="Execute one step" onAction="#executeCommand">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnReset" layoutX="499.0" layoutY="26.0" mnemonicParsing="false" prefHeight="70.0"
+                prefWidth="182.0" text="Reset" onAction="#reset">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+    </children>
+</Pane>

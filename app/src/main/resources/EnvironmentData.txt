@@ -1,0 +1,5 @@
+circle_1 CIRCLE 1 1 1
+bordo_inferiore RECTANGLE 400 50 800 100
+bordo_superiore RECTANGLE 400 550 800 100
+bordo_sinistro RECTANGLE 50 300 100 400
+bordo_destro RECTANGLE 750 300 100 400

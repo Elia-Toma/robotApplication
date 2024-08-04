@@ -1,0 +1,21 @@
+MOVE 1 0 1
+MOVE RANDOM -1 1 -1 1 2
+SIGNAL condizione_1
+FOLLOW condizione_1 200 5
+CONTINUE 10
+UNSIGNAL condizione_1
+STOP
+
+REPEAT 3
+    MOVE -1 0 2
+    MOVE RANDOM -1 0 -2 2 3
+DONE
+
+UNTIL bordo_sinistro
+    MOVE -1 0 2
+    MOVE RANDOM -2 -1 -2 0 3
+DONE
+
+DO FOREVER
+    FOLLOW bordo_sinistro 300 3
+DONE
